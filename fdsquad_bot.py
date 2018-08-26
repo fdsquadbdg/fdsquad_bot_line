@@ -152,7 +152,6 @@ while True:
                             else:
                                 cctv['sidermem'][op.param1] += "\n~ " + Name
                                 pref=['eh ada om','hai om','nah','lg ngapain om','halo om','sini om']
-                                msg = new message();
                                 msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+Name+']}'}
                                 client.sendText(op.param1, str(random.choice(pref))+ msg +' jangan lupa cek pengumuman yaaaa')
                         else:
